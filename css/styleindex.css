@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&family=Mouse+Memoirs&family=Poppins:ital@1&family=Sora:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+/* navigation bar */
+.navibar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    z-index: 1;
+}
+.logo {
+    width: 20%;
+    display: left;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 40px;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: whitesmoke;
+    height: 40px;
+
+}
+
+.nav-list span {
+    padding-left: 5px;
+}
+
+.navibar {
+    display: flex;
+    background-color: black;
+}
+
+.options {
+    left: 5px;
+    display: flex;
+    padding-right: 34px;
+}
+
+.nav-list {
+    max-width: 177%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.nav-list li:hover {
+    background-color: rgb(64, 64, 64);
+    border-radius: 5px;
+    
+
+}
+
+.rightnav {
+    display: inherit;
+    text-align: right;
+    padding-right: 35px;
+}
+
+#search {
+    border-radius: 9px;
+    border: none;
+}
+.search{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+.search:hover{
+    background-color: grey;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
+
+/* landing page */
+.background {
+
+    background: rgba(0, 0, 0, 0.7) url("https://images.unsplash.com/photo-1505527385992-63e06a393342?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: left 50%;
+    
+}
+
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+}
+
+.intro h1 {
+    font-size: 2rem;
+}
+
+.intro h3 {
+    font-size: 1.8rem;
+}
+.joinbtn{
+    background-color: #064439; 
+    color: #EEE7CE;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform .2s;
+    padding: 10px 10px;
+    margin-top: 165px;
+    border-radius: 5px;
+}
+.joinbtn:hover{
+    background-color: #042f27;
+    transform: scale(1.1);
+}
+/* why us section */
+.whyussection{
+    height: 500px;
+
+}
+
+.whyussection .heading{
+    text-align: center;
+    font-size: 2.8rem;
+    padding-top: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px gray;
+}
+
+.whyussection .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.whyussection .card{
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 301px;
+    height: 253px;
+    text-align: center;
+    color: #064439;
+    background-color: #EEE7CE;
+    box-shadow: 5px 5px #b4aa86;
+}
+
+.whyussection h4{
+    padding: 8px;
+}
+.whyussection p{
+    padding: 5px;
+}
+/* our instructor section */
+
+.teacher {
+    text-align: center;
+    font-size: 2.8rem;
+    padding-top: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-shadow: 2px 2px gray;
+}
+
+
+/* class timetable */
+.timetablesection{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-bottom: 50px;
+    margin-top: 108px;
+}
+
+.timetablesection h2{
+    text-align: center;
+    font-size: 2.8rem;
+    padding-top: 24px;
+    font-family: 'Poppins', sans-serif;
+    bottom: 47px;
+    position: relative;
+    color: black;
+    text-shadow: 2px 2px gray;
+}
+
+.timetable{
+    display: grid;
+    grid-template-columns: repeat(6,223px);
+    position: relative;
+    justify-content: center;
+
+}
+
+.period{
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    position: relative;
+    grid-gap: 17px;
+    text-align: center;
+    justify-content: center;
+    left: 545px;
+  
+}
+.monday,.tuesday,.wednesday,.thursday,.friday,.saturday{
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 158px;
+    background-color:#EEE7CE;
+}
+
+.period h3{
+    position: relative;
+    bottom: 52px;
+    background-color:#064439;
+    color: #EEE7CE;
+
+}
+
+/* admission form */
+.admission{
+    height: 530px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.admission {
+    /* background: url('https://images.unsplash.com/photo-1548504778-b14db6c34b04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover; */
+    background: url('https://images.unsplash.com/photo-1617957772097-93dc166cd335?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80') no-repeat center center/cover;
+    padding-bottom: 60px;
+}
+
+.admission .btn{
+    padding: 1px 16px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+    background-color:#064439;
+    color: #EEE7CE;
+    transition: all 0.2s;
+    cursor: pointer;
+
+}
+.admission .btn:hover{
+    background-color: #042f27;
+    transform: scale(1.1);
+}
+
+
+.admission .form{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admission input{
+    width: 50%;
+    padding: 9px;
+    margin: 10px auto ;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.admission h2{
+    text-align: center;
+    font-size: 2.8rem;
+    padding-top: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-shadow: 2px 2px gray;
+
+}
+
+/* footer */
+.footer{
+    height: 300px;
+    padding-top: 30px;
+    background-color:#cec4a1;
+    color:#03392f;
+}
+.footer .container{
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+}
+.footer .section1{
+    width: 50%;
+}
+.footer .section2{
+    width: 50%;
+    padding-right:58px;
+    text-align: right;
+}
+
+.footer h2 ,h3,p{
+    padding-left:38px;
+    padding-top: 8px;
+    font-family: 'Sora', sans-serif;
+}
+
+.footer img{
+    height: 20px;
+}
+
+.section2 h2{
+    padding-top:10px ;
+    padding-bottom:20px ;
+}
+
+.contains2{
+    /* border: 1px solid black; */
+    text-align: left;
+    width: 50%;
+    position: relative;
+    left: 367px;
+}
+.footer>p{
+    height: 80px;
+    background-color:#cec4a1;
+    color:#03392f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 20px;
+}
+.line{
+    width:473%;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+/* new  instructors section */
+
+.thumbnail img{
+    border-radius: 5px;
+}
+.sectiontag{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+    padding: 35px 15px;
+    color: #064439;
+
+}
+.sectionleft{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding-right: 15px;
+}
